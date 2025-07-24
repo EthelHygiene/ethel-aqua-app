@@ -1,8 +1,16 @@
+import Head from "next/head";
+import HeroSection from "../components/HeroSection";
+
 export default function Home() {
   return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Welcome to Ethel Aqua App</h1>
-      <p>This is the live prototype frontend.</p>
-    </div>
+    <>
+      <Head>
+        <title>Ethel Aqua – Purified Water & Ice</title>
+        <meta name="description" content="Ethel Aqua is your trusted supplier of purified water, sparkling drinks, and ice products in South Africa." />
+      </Head>
+      <main>
+        <HeroSection />
+      </main>
+    </>
   );
 }
